@@ -1,16 +1,6 @@
 # Tech-Tribes
 Personal Portfolio by Helitha Rupasinghe. 
 
-## Features 
-
-📌 With this grocery assistant, you can:
-
-✅ Easily add, and remove items with a few taps or clicks.
-
-✅ Access your lists from anywhere, anytime, thanks to Firebase DB integration.
-
-✅ Enjoy a user-friendly interface designed to make your shopping experience smooth and efficient.
-
 ## Quick start:
 
 ```
