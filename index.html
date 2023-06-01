@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tech Tribe</title>
-  <meta name="theme-color" content="#000000" />
-  <meta
-      name="description"
-      content="Web site created using HTML, CSS and Vanilla Javascript."
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
+  <title>Tech Tribes</title>
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Web site created using HTML, CSS and Vanilla Javascript." />
+  <link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
 <body>
@@ -28,13 +26,13 @@
 
   <header id="home" class="fade-in one">
     <nav class="navbar navbar-dark" aria-label="Helitha Developer">
-      <a class="navbar-brand" href="#home">HR, Developer</a>
+      <a class="navbar-brand bungee-outline" href="#home">HR, Developer</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
         aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample01">
+      <div class="collapse navbar-collapse bungee-outline" id="navbarsExample01">
         <ul class="navbar-nav mx-2 mb-2">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#about">About</a>
@@ -61,8 +59,9 @@
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light">About <span class="text-success">me</span></h1>
-          <p class="lead text-muted">Hi, I'm Helitha, a developer with 3 years of experience in Software Development. As a skilled developer, I specialize in creating
-            clean, modern and user-friendly designs. Let me know if you have a project in mind!</p>
+          <p class="lead text-muted">Hi, I'm Helitha, a software developer who specializes in Software Development.
+            Although I'm relatively new to this field, I'm passionate about creating clean, modern, and user-friendly
+            designs. If you have a project in mind, don't hesitate to get in touch with me!</p>
           <p>
             <a href="#" class="btn btn-primary my-2">Download CV</a>
           </p>
@@ -80,62 +79,155 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col-lg-4 col-sm-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="devpost.png" alt="dev-post"></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="card-img-top"
+                src="devpost.png" alt="dev-post" width="700px" height="400px"></a>
             <div class="card-body">
-              <p class="card-text">A blazing fast personal blog site for developers built with React.js components, GraphQL, Gatsby, Typescript and Node.js. </p>
+              <p class="card-text">An ultra-fast personal blog site designed specifically for developers. </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="https://github.com/JavascriptDon/The-Dev-Post" type="button" class="btn btn-sm btn-outline-secondary">Github</a>
+                  <a href="https://github.com/JavascriptDon/The-Dev-Post" type="button"
+                    class="btn btn-sm btn-outline-secondary">Github</a>
                 </div>
-                <a href="https://thedevpost.netlify.app/" type="button" class="btn btn-sm btn-outline-secondary">Live Demo</a>
+                <a href="https://thedevpost.netlify.app/" type="button" class="btn btn-sm btn-outline-secondary">Live
+                  Demo</a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="devfolio.png" alt="dev-portfolio"></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="card-img-top"
+                src="devfolio.png" alt="dev-portfolio" width="700px" height="400px"></a>
             <div class="card-body">
-              <p class="card-text">A simple, responsive web application created with svelte.js components: daisyUI components, tailwind CSS and vite.  </p>
+              <p class="card-text">Experience a responsive web application built using Svelte.js.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="https://github.com/JavascriptDon/DevFolio" type="button" class="btn btn-sm btn-outline-secondary">Github</a>
+                  <a href="https://github.com/JavascriptDon/DevFolio" type="button"
+                    class="btn btn-sm btn-outline-secondary">Github</a>
                 </div>
-                <a href="https://dev-folio-nu.vercel.app/" type="button" class="btn btn-sm btn-outline-secondary">Live Demo</a>
+                <a href="https://dev-folio-nu.vercel.app/" type="button" class="btn btn-sm btn-outline-secondary">Live
+                  Demo</a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="devjane.png" alt="dev-jane"></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="card-img-top"
+                src="devjane.png" alt="dev-jane" width="700px" height="400px"></a>
             <div class="card-body">
-              <p class="card-text">A portfolio site with a responsive web design, built using ReactJS Components, Tailwind CSS, HTML5 and Vite.</p>
+              <p class="card-text">An impressive portfolio site showcasing a stunning responsive web design! </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="https://github.com/JavascriptDon/DevJane_" type="button" class="btn btn-sm btn-outline-secondary">Github</a>
+                  <a href="https://github.com/JavascriptDon/DevJane_" type="button"
+                    class="btn btn-sm btn-outline-secondary">Github</a>
                 </div>
-                <a href="https://dev-jane.vercel.app/" type="button" class="btn btn-sm btn-outline-secondary">Live Demo</a>
+                <a href="https://dev-jane.vercel.app/" type="button" class="btn btn-sm btn-outline-secondary">Live
+                  Demo</a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 mb-4">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="champions.png" alt="endorsements"></a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="card-img-top"
+                src="champions.png" alt="endorsements" data-caption="We are the champions, my friends!" width="700px" height="400px"></a>
             <div class="card-body">
-              <p class="card-text">A mobile-first web application crafted using vanilla Javascript, HTML5, CSS3, Firebase, and Vite.</p>
+              <p class="card-text">
+                A mobile-first web app crafted with vanilla JavaScript, HTML5, CSS3, Firebase, and Vite.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="https://github.com/JavascriptDon/Javascript-Fundamentals/tree/endorsements" type="button" class="btn btn-sm btn-outline-secondary">Github</a>
+                  <a href="https://github.com/JavascriptDon/Javascript-Fundamentals/tree/endorsements" type="button"
+                    class="btn btn-sm btn-outline-secondary">Github</a>
                 </div>
-                <a href="https://wearethechampions.netlify.app/" type="button" class="btn btn-sm btn-outline-secondary">Live Demo</a>
+                <a href="https://wearethechampions.netlify.app/" type="button"
+                  class="btn btn-sm btn-outline-secondary">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 mb-4">
+          <div class="card h-100">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img class="card-img-top"
+                src="codeflix.png" alt="endorsements" data-caption="CodeFlix" width="700px" height="400px"></a>
+            <div class="card-body">
+              <p class="card-text">
+                A powerful web app built using ReactJS, Tailwind CSS, Firebase, and Axios.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/JavascriptDon/Javascript-Fundamentals/tree/codeflix" type="button"
+                    class="btn btn-sm btn-outline-secondary">Github</a>
+                </div>
+                <a href="https://codeflix23.netlify.app/" type="button"
+                  class="btn btn-sm btn-outline-secondary">Live Demo</a>
               </div>
             </div>
           </div>
         </div>
     </section>
     <!--end end-->
+
+
+    <!-- Modal Dialog -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Explore My Projects</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="devpost.gif" class="d-block w-100" alt="devpost-logo">
+                  <h4 class="pt-2">The Dev Post</h4>
+                  <p class="pt-2">A blazing fast personal blog site for developers built with React.js components,
+                    GraphQL, Gatsby, Typescript and Node.js.</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="devfolio.gif" class="d-block w-100" alt="devfolio-logo">
+                  <h4 class="pt-2">Devfolio</h4>
+                  <p class="pt-2">A simple, responsive web application created with svelte.js components: daisyUI
+                    components, tailwind CSS and vite.</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="devjane.gif" class="d-block w-100" alt="devjane-logo">
+                  <h4 class="pt-2">DevJane</h4>
+                  <p class="pt-2">A portfolio site with a responsive web design, built using ReactJS Components,
+                    Tailwind CSS, HTML5 and Vite.</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="endorsement.gif" class="d-block w-100" alt="champions-logo">
+                  <h4 class="pt-2">We are the Champions</h4>
+                  <p class="pt-2">A portfolio site with a responsive web design, built using ReactJS Components,
+                    Tailwind CSS, HTML5 and Vite.</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="codeflix.gif" class="d-block w-100" alt="champions-logo">
+                  <h4 class="pt-2">Codeflix</h4>
+                  <p class="pt-2">A full-stack web app created with the incredible ReactJS Framework, Tailwind CSS, Firebase and Axios.</p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Exit Modal Dialog-->
 
     <!--start contact-->
     <section id="contact" class="fade-in four bg-contact d-flex align-items-center">
@@ -146,10 +238,10 @@
               <h3>Get in touch <span class="text-success">with me</span></h3>
               <form name="contact" method="POST" data-netlify="true">
                 <div class="form-group mt-4">
-                  <input type="text" name="name" class="form-control" placeholder="Name"/>
+                  <input type="text" name="name" class="form-control" placeholder="Name" />
                 </div>
                 <div class="form-group mt-4">
-                  <input type="email" name="email" class="form-control" placeholder="Email"/>
+                  <input type="email" name="email" class="form-control" placeholder="Email" />
                 </div>
                 <div class="form-group mt-4">
                   <textarea name="message" class="form-control" placeholder="message"></textarea>
@@ -158,38 +250,48 @@
                   <button class="btn btn-primary" type="submit">Send</button>
                 </div>
               </form>
-              
-                 </div>
+
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section><!--end contact-->
 
   </main>
 
   <!--scroll to top-->
-  <div id="btn-top" class="justify-content-end d-flex mb-5 px-2">
-    <button type="button" class="btn btn-primary"><i class="fa fa-chevron-up"></i></button>
+  <div id="btn-top" class="fade-in justify-content-end d-flex mb-5 px-2">
+    <button type="button" class="btn btn-primary btn_hover "><i class="fa fa-chevron-up"></i></button>
   </div>
 
   <footer class="fade-in five py-3 my-4">
     <ul class="nav justify-content-center pb-3 mb-3">
       <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i class="fab fa-2x fa-twitter"></i></a></li> -->
-      <li class="nav-item"><a href="https://www.linkedin.com/in/helitharupasinghe/" class="nav-link px-2 text-white"><i class="fab fa-2x fa-linkedin"></i></a></li>
-      <li class="nav-item"><a href="https://github.com/JavascriptDon" class="nav-link px-2 text-white"><i class="fab fa-2x fa-github"></i></a></li>
-      <li class="nav-item"><a href="https://dribbble.com/hr21don" class="nav-link px-2 text-white"><i class="fab fa-2x fa-dribbble"></i></a></li>
+      <li class="nav-item"><a href="https://www.linkedin.com/in/helitharupasinghe/"
+          class="nav-link px-2 text-white social_link"><i class="fab fa-2x fa-linkedin"></i></a></li>
+      <li class="nav-item"><a href="https://github.com/JavascriptDon" class="nav-link px-2 text-white social_link"><i
+            class="fab fa-2x fa-github"></i></a></li>
+      <li class="nav-item"><a href="https://dribbble.com/hr21don" class="nav-link px-2 text-white social_link"><i
+            class="fab fa-2x fa-dribbble"></i></a></li>
       <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-white"><i class="fab fa-2x fa-behance"></i></a></li> -->
     </ul>
-    <strong class="text-center text-white">Copyright © 2023 Helitha</strong>
+    <strong class="text-center text-white footer_link">Copyright © <span id="current-year"></span> Helitha</strong>
   </footer>
   <script src="main.js" type="module"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(() => console.log('Service Worker registered successfully.'))
+          .catch((error) => console.error('Error registering Service Worker:', error));
+      }
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,17 @@
+.footer_link:hover,
+.social_link:hover{
+  opacity: .7;
+}
+
+.bungee-outline{
+  font-family: 'Bungee Spice', sans-serif;
+  font-weight: bold;
+}
+
+.modal.and.carousel {
+  position: fixed; 
+}
+
 /* Define Keyframes */
 
 @-webkit-keyframes fadeIn {
