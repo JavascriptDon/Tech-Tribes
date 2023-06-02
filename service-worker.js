@@ -5,14 +5,11 @@ const cacheName = 'endorsements-v1';
 // Files to cache
 const filesToCache = [
   '/',
-  '/index.html',
-  '/style.css',
-  '/main.js',
-  '/public/android-chrome-144x144.png',
-  '/public/android-chrome-192x192.png',
-  '/public/android-chrome-512x512.png',
-  '/public/favicon-16x16.png',
-  '/public/favicon-32x32.png'
+  '/android-chrome-144x144.png',
+  '/android-chrome-192x192.png',
+  '/android-chrome-512x512.png',
+  '/favicon-16x16.png',
+  '/favicon-32x32.png'
 ];
 
 // Install event
